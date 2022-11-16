@@ -1,28 +1,25 @@
-.main {
+/* .main {
   position: relative;
   top: 0px;
   left: 0px;
-  width: 1366px;
-  height: 768px;
+  width: 100%;
   background: #ffffff 0% 0% no-repeat padding-box;
   opacity: 1;
   margin: auto;
-}
+} */
 
-.background {
+/* .background {
   /* position: absolute; */
-  top: 0px;
-  left: 0px;
-  width: 1366px;
+/* width: 1366px;
   height: 263px;
-  background: transparent url("../../public/background.png") 0% 0% no-repeat
-    padding-box;
+  /* background: transparent url("../../public/background.png") 0% 0% no-repeat */
+/* padding-box;
   border: 1px solid #707070;
   opacity: 1;
   object-fit: cover;
-}
+} */
 
-.loginPage {
+/* .loginPage {
   position: absolute;
   top: 81px;
   left: 395px;
@@ -31,9 +28,9 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 6px;
   opacity: 1;
-}
+} */
 
-.logoHeader {
+/* .logoHeader {
   position: absolute;
   width: 577px;
   height: 58px;
@@ -41,9 +38,9 @@
   box-shadow: 0px 3px 7px #00000029;
   border-radius: 6px 6px 0px 0px;
   opacity: 1;
-}
+} */
 
-.logo {
+/* .logo {
   position: absolute;
   height: 32px;
   width: 99px;
@@ -51,9 +48,9 @@
   left: 50%;
   opacity: 1;
   top: 14px;
-}
+} */
 
-.loginText {
+/* .loginText {
   position: absolute;
   top: calc(155px - 81px);
   left: 251px;
@@ -63,10 +60,14 @@
   color: #20b716;
   opacity: 1;
   text-transform: capitalize;
-  font: normal normal normal 29px/35px Josefin Sans;
-}
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 29px;
+  text-align: center;
+  vertical-align: middle;
+} */
 
-.tree {
+/* .tree {
   position: absolute;
   top: calc(208px - 81px);
   left: calc(491px - 395px);
@@ -75,68 +76,50 @@
   background: transparent url("../../public/tree.png") 0% 0% no-repeat
     padding-box;
   opacity: 1;
-}
+} */
 
-.form {
+/* .form {
   position: absolute;
   top: 279px;
   left: calc(491px - 395px);
   width: 385px;
-}
+} */
 
-.form__group {
+/* .form__group {
   width: 100%;
   position: absolute;
   height: 30px;
-}
+} */
 
 .password_form_group {
   top: calc(345px - 279px);
 }
 
-.form__field {
+/* .form__field {
   width: 100%;
   border: none;
   border-bottom: 2px solid #ddd;
   outline: 0;
   font-size: 16px;
-  padding: 7px 0;
+  padding: 7px 0; 
   background: transparent;
   transition: border-color 0.2s;
+} */
+
+/* .form-field input {
+  background: #fff;
 }
 
 .form__field::placeholder {
-  color: transparent;
-}
-
-.form__field:placeholder-shown ~ .form__label {
-  margin-left: 4px;
-  font-size: 16px;
-  cursor: text;
-  top: 10px;
-}
-
-.form__label,
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0px;
-  display: block;
-  transition: 0.2s;
-  font-size: 12px;
-  line-height: 19px;
   color: #20b716;
-}
+} */
 
-.form__field:focus ~ .form__label {
-  opacity: 0;
-}
-
-.form__field:focus {
+/* .form__field:focus {
   padding-bottom: 6px;
-  border-bottom: 2px solid #20b716;
-}
+  border-color: #20b716;
+} */
 
-.errorMessage {
+/* .errorMessage {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -144,9 +127,9 @@
   font-size: 13px;
   font-family: "MyriadPro";
   color: #ee2d6e;
-}
+} */
 
-.signInButton {
+/* .signInButton {
   position: absolute;
   top: calc(394px - 279px);
   width: 100%;
@@ -159,9 +142,9 @@
   font: normal normal normal 19px/23px Josefin Sans;
   letter-spacing: 0px;
   opacity: 1;
-}
+} */
 
-.secondaryActions {
+/* .secondaryActions {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -169,9 +152,9 @@
   left: 95px;
   top: 459px;
   width: 385px;
-}
+} */
 
-.forgotPasswordButton {
+/* .forgotPasswordButton {
   background: none;
   border: none;
   width: 110px;
@@ -181,9 +164,9 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
-}
+} */
 
-.signUpButton {
+/* .signUpButton {
   background: none;
   border: none;
   text-align: right;
@@ -191,9 +174,9 @@
   letter-spacing: 0px;
   color: #d9185f;
   opacity: 1;
-}
+} */
 
-.orText {
+/* .orText {
   position: absolute;
   top: 490px;
   left: 281px;
@@ -202,14 +185,15 @@
   font: normal normal normal 16px/19px Josefin Sans;
   letter-spacing: 0px;
   color: #000000;
-  opacity: 1;
+  opacity: 1; 
 }
+ */
 
 .facebookAuthButton {
   top: 592px;
 }
 
-.authButton {
+/* .authButton {
   position: absolute;
   left: 95px;
   width: 386px;
@@ -223,7 +207,7 @@
   line-height: 18px;
   font-weight: 400;
   letter-spacing: 0px;
-}
+} */
 
 .googleAuthButton {
   top: 530px;
@@ -233,4 +217,46 @@
   position: absolute;
   left: 4px;
   top: 4px;
+}
+
+/** Media Queries (Breakpoints are same as standard(https://tailwindcss.com/docs/responsive-design#using-custom-breakpoints)) */
+
+/* sm */
+
+@media only screen and (min-width: 640px) {
+  /* .main {
+    position: static;
+  } */
+}
+
+/* md */
+
+@media only screen and (min-width: 768px) {
+  /* .main {
+    position: static;
+  } */
+}
+
+/* lg */
+
+@media only screen and (min-width: 1024px) {
+  /* .main {
+    position: static;
+  } */
+}
+
+/* xl */
+
+@media only screen and (min-width: 1280px) {
+  /* .main {
+    position: static;
+  } */
+}
+
+/* 2xl */
+
+@media only screen and (min-width: 1536px) {
+  /* .main {
+    position: static;
+  } */
 }
