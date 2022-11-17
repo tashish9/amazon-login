@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import LoginForm from "../components/login-form";
+import OAuthButtons from "../components/oauth-buttons";
 
 export default function Home() {
   return (
@@ -20,71 +22,12 @@ export default function Home() {
               login
             </h1>
             <div className="mx-auto mt-6 h-32 w-full bg-tree bg-center bg-no-repeat"></div>
-            <form className="mx-auto mt-6 ">
-              <div className="h-[46px] w-full">
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full border-b-2 border-lightgray bg-transparent py-[7px] px-1 transition-colors duration-200 placeholder:text-primary focus:border-primary focus:outline-none"
-                  placeholder="Email"
-                />
-                <div className="mt-[5px] flex items-center gap-1 text-xs text-secondary md:text-[14px]">
-                  <div className="relative h-3 w-3 md:h-4 md:w-4">
-                    <Image src="/error.svg" fill alt="Err" />
-                  </div>
-                  <p>This email field is required</p>
-                </div>
-              </div>
 
-              <div className="mt-5 h-[25px] w-full">
-                <input
-                  type="password"
-                  id="password"
-                  className="w-full  border-b-2 border-lightgray bg-transparent py-[7px] px-1 transition-colors duration-200 placeholder:text-primary focus:border-primary focus:outline-none"
-                  placeholder="Password"
-                />
-              </div>
-
-              <button className="mt-7 h-10 w-full rounded-full border-none bg-primary leading-6 text-white md:h-[49px] md:text-[19px] ">
-                Sign In
-              </button>
-            </form>
-            <div className="mx-auto mt-4 flex items-center justify-between">
-              <button className="h-[15px] bg-none text-left text-[14px] leading-[18px]">
-                Forgot Password?
-              </button>
-              <button className="h-[15px] bg-none text-left text-[14px] leading-[18px] text-secondary">
-                New User ? Sign Up
-              </button>
-            </div>
+            <LoginForm />
 
             <p className="mt-4 text-center leading-[18px]"> or </p>
 
-            <div className="mx-auto mt-6 w-full">
-              <button className="relative h-[46px] w-full border-none bg-blue text-center text-sm uppercase text-white">
-                <div className="absolute inset-x-1 top-[9px] h-7 w-7 md:inset-1 md:h-9 md:w-9">
-                  <Image
-                    src="/google.png"
-                    alt="google"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                continue with google
-              </button>
-
-              <button className=" relative mt-4 h-[46px] w-full border-none bg-blue text-center text-sm uppercase text-white">
-                <div className="absolute inset-x-1 top-[9px] h-7 w-7 md:inset-1 md:h-9 md:w-9">
-                  <Image
-                    src="/facebook.png"
-                    alt="facebook"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                continue with facebook
-              </button>
-            </div>
+            <OAuthButtons />
           </div>
         </section>
       </main>
